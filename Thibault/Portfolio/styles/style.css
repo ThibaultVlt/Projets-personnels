@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+}
+
+.slider {
+  width: 100%;
+  max-height: 500px;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.slider-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.slider-content p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.box {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.avatar {
+  width: 100%;
+  height: 50%;
+  max-height: 500px;
+}
+
+/* texte dans écrit formulaire */
+::placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+}
+
+/* gap 20px = écart de 20 pixels entre les éléments */
+.gap20 {
+  gap: 20px;
+}
+
+.wrap {
+  flex-wrap: wrap; /* Placer les élements en trop en dessous */
+}
+
+.green {
+  background: #00749E;
+  color: #fff;
+}
+
+/* width 40% / 60% / 33% = longueur de X% */
+.w40 {
+  width: 40%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w33 {
+  width: 33%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w32 {
+  width: 32%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.aligncenter {
+  align-items: center;
+}
+
+.skill {
+  background: #60B3D7;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.skill img {
+  width: 100px;
+}
+
+.skill h3 {
+  margin-top: 10px;
+}
+
+.realisation {
+  height: auto;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.realisation h3 {
+  position: absolute;
+  top: 50%; /* centrer le text dans l'élément */
+  left: 50%; /* centrer le text dans l'élément */
+  transform: translate(-50%, -50%); /* centrer le text dans l'élément */
+  font-size: 2rem;
+  width: max-content; /* étirer le text pour que cela soit sur une ligne */
+  opacity: 0; /* ne pas voir le texte */
+  transition: 0.4s ease;
+}
+
+.realisation a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.realisation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%); /* baisser la luminosité de l'image */
+  transition: 0.4s ease;
+}
+
+.realisation:hover img {
+  filter: brightness(80%);
+}
+
+.realisation:hover h3 {
+  opacity: 1; /* voir le texte */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.07);
+}
+
+.flex-header {
+  display: flex;
+  padding: 10px;
+}
+
+.header-logo {
+  display: block;
+}
+
+.header-logo img {
+  width: 50px;
+}
+
+.header-sociaux img {
+  width: 25px;
+  padding: 10px;
+  text-decoration: none;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  align-items: center;
+  padding-right: 350px;
+}
+
+.header-menu li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.header-menu li a:hover {
+  background: #f2f2f2;
+}
+
+.header-menu li:last-child a {
+  background-color: #00749E;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.header-menu li:last-child a:hover {
+  background-color: #60B3D7;
+  color: #fff;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+/* formulaire */
+
+.contact {
+  color: #fff;
+  margin: 20px 0px;
+}
+
+.slider-contact {
+  width: 100%;
+  max-height: 600px;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+form {
+  min-width: 800px;
+  padding: 1rem;
+  border: 5px solid #fff;
+  border-radius: 12%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+textarea {
+  resize: none;
+  min-height: 200px;
+}
+
+input,
+textarea {
+  font: 1.3rem sans-serif;
+  width: 600px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 810px) {
+  header {
+    height: 60px;
+  }
+
+  .menu-mobile {
+    display: block;
+    border: 0px;
+    background-color: #fff;
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 991; /* valeur élevée = passe devant tout */
+  }
+
+  .header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 991;
+  }
+
+  .header-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    display: none;
+  }
+
+  .menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header-sociaux {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    height: 0vh;
+  }
+
+  /* Pour afficher le menu déroulant */
+  .active {
+    display: flex;
+  }
+
+  .header-menu li:last-child a {
+    margin-top: 10px;
+  }
+
+  .slider {
+    height: 60vh;
+  }
+
+  .slider-content {
+    width: 90%;
+  }
+
+  .slider-content p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1rem;
+    text-wrap: balance;
+  }
+
+  .avatar {
+    padding-bottom: 20px;
+  }
+
+  .toColum {
+    flex-direction: column;
+  }
+
+  .wmCenter {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wm100 {
+    width: 100%;
+  }
+
+  .section {
+    padding: 20px 0;
+  }
+
+  .box {
+    max-width: 90%;
+  }
+
+  .flex {
+    padding-bottom: 20px;
+  }
+
+  .wm45 {
+    width: 45%;
+  }
+}
