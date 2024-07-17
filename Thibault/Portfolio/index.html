@@ -63,7 +63,7 @@
           <img src="img/avatar tibo.svg" class="avatar" alt=" Thibault" />
           <div class="w60 wm100 text-center">
             <p>
-              Titulaire d'un BTS Maintenance Industrielle, après 11 ans au sein de l'armée de terre, je suis actuellement en reconversion professionnelle vers le développement web & web mobile.
+              Titulaire d'un BTS Maintenance Industrielle, et après 11 ans au sein de l'armée de terre, je suis actuellement en reconversion professionnelle vers le développement web & web mobile.
               
               En formation au centre de formation de l'AFPA à Beaumont, je suis à la recherche d'un stage du 27 janvier 2025 au 04 avril 2025. Pour appliquer mes nouvelles compétences ainsi que les approfondir en milieu professionnel sur des projets concret. N'hésitez pas à me contacter.
               </p>
@@ -71,7 +71,7 @@
         </div>
       </div>
 
-      <div class="section green">
+      <div class="section blue">
         <!-- section des compétences -->
         <div class="box table text-center">
           <h2>Mes compétences</h2>
@@ -84,6 +84,7 @@
               <img src="img/logo_css.png" alt="Logo CSS" />
               <h3>CSS</h3>
             </div>
+            <!-- Compétence JS -->
             <!-- <div class="w33 wm100 skill">
                             <img src="img/logo_js.png" alt="Logo Javascript">
                             <h3>Javascript</h3>
@@ -91,7 +92,7 @@
           </div>
         </div>
       </div>
-
+      
       <div id="realisation" class="section">
         <!-- section réalisations effectuées -->
         <div class="box text-center">
@@ -140,71 +141,50 @@
           </div>
         </div>
       </div>
+      <!-- Formulaire contact -->
 
-      <div id="contact" class="slider-contact">
-        <img src="img/Contact.jpg" class="slider-background" alt="Contact" />
-        <div class="slider-content">
-          <!-- section contact (faire le formulaire)-->
-          <div class="box text-center ">
-            <h2 class="contact">Contactez-moi</h2>
-            <div class="w32 flex form space-between">
-              <form action="/" method="post">
-                <ul>
-                  <li>
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="NOM" name="nom" />
-                    <label for="first-name"></label>
-                    <input
-                      type="text"
-                      id="first-name"
-                      placeholder="Prénom"
-                      name="prénom"
-                    />
-                  </li>
-                </ul>
+      <div class="formulaire">
+        <div class="contactez-nous blue">
+          <h2>Contact</h2>
+            <p>Un problème, une question, envie de nous envoyer   un message d’amour ? N’hésitez pas à   utiliser ce formulaire pour prendre         contact   avec moi !</p>
+        
+            <form action="/page-traitement-donnees" method="post">
+            
+              <div>          
+                <label for="nom"></label>
+                <input type="text" id="nom" name="nom"  placeholder="Votre nom" required>
+              </div>
 
-                <ul>
-                  <li>
-                    <label for="mail"></label>
-                    <input
-                      type="email"
-                      placeholder="E-mail"
-                      name="e-mail"
-                      id="mail"
-                    />
-                  </li>
-                </ul>
-
-                <ul>
-                  <li>
-                    <label for="phone"></label>
-                    <input
-                      type="number"
-                      maxlength="10"
-                      placeholder="Téléphone"
-                      name="Téléphone"
-                      id="Phone"
-                    />
-                  </li>
-                </ul>
-
-                <ul>
-                  <li>
-                    <label for="msg"></label>
-                    <textarea
-                      name="message"
-                      id="msg"
-                      placeholder="Votre message"
-                    ></textarea>
-                  </li>
-                </ul>
-
-                <div class="bouton">
-                  <button type="submit">Envoyer</button>
-                </div>
-              </form>
-            </div>
-          </div>
+              <div>          
+                <label for="prénom"></label>
+                <input type="text" id="nom" name="nom"  placeholder="Votre prénom" required>
+              </div>
+            
+              <div>
+                <label for="email"></label>
+                <input type="email" id="email"  name="email" placeholder="Votre e-mail" required>
+              </div>
+            
+              <!-- <div>
+                <label for="sujet">Quel est le sujet de votre     message ?</label>
+                <select name="sujet" id="sujet" required>
+                <value="" disabled selected    hidden>Choisissez le sujet de votre  message</option>
+                <value="probleme-compte">Problème avec mon    compte</option>
+                <option value="question-produit">Question à   propos  d’un produit</option>
+                <option value="suivi-commande">Suivi de ma    commande</option>
+                <option value="autre">Autre...</option>
+                </select>
+              </div> -->
+            
+              <div>
+                <label for="message"></label>
+                <textarea id="message" name="message"   placeholder="Votre message" required></textarea>
+              </div>
+            
+              <div>
+                <button type="submit">Envoyer mon message</button>
+              </div>
+            </form>
         </div>
       </div>
     </div>
