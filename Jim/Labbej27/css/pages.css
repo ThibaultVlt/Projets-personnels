@@ -10,134 +10,68 @@ body {
     background-color: #2a3148;
     font-family: "Figtree", sans-serif;
     color: #FFF;
+    height: 100%;
 }
 
-.slider {
+h1 {
+    color: #FFF;
+    font-size: 5rem;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    font-style: underline;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    padding: 20px 20px 10px 20px;
+}
+
+p {
+    font-size: 2rem;
+    padding: 10px 20px 30px 40px;
+}
+
+.container {
+    text-align: justify;
+    width: 50%;
+    position: relative;
+    left: 50vh;
+    margin: 0 50px;
+    margin-bottom: 20px;
+}
+
+.ceneter ul {
+    margin-bottom: 10px;
+}
+
+.center ul li {
+    font-size: 2rem;
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+.box {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.center {
+    margin-top: 150px;
+    width: 50%;
     width: 100%;
     max-height: 400px;
     aspect-ratio: 16/9;
     position: relative;
 }
 
-.slider-background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(45%);
-}
-
-.slider-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-h1 {
+.center a {
     color: #FFF;
-    font-size: 10rem;
-}
-
-h2 {
-    padding: 50px;
-    font-size: 6rem;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-p {
-    padding-left: 50px;
     font-size: 2rem;
-    line-height: 1.5em;
-}
 
-strong {
-    font-size: 3rem;
-}
-
-.slider-content p {
-    color: #FFF;
-    font-size: 5rem;
-}
-
-.box {
-    max-width: 1280px;
-    margin-inline: auto;
-}
-
-.flex {
-    display: flex;
-    padding: 20px 0;
-}
-
-.avatar {
-    border-radius: 25%;
-    width: 100%;
-    height: 50%;
-    max-height: 610px;
-}
-
-.carte-visite {
-    margin: 50px 0;
-}
-
-.mt100 {
-    margin-top: 100px;
-}
-
-/* Dimension en largeur : width 40% / 60% / 33% = longueur de X% */
-.w40 {
-    width: 40%;
-}
-
-.w20 {
-    width: 20%;
-}
-
-.w50 {
-    width: 50%;
-}
-
-.w32 {
-    width: 32%;
-}
-
-.blue {
-    background: #4889A5;
-}
-
-
-
-.service h3 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.service p {
-    font-size: 1.8rem;
-    align-items: center;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.service {
-    text-align: center;
-}
-.service a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.img-service {
-    width: 10rem;
-}
-
-.text-center {
-    text-align: center;
 }
 
 .space-between {
@@ -147,6 +81,51 @@ strong {
 .aligncenter {
     align-items: center;
 }
+
+.zone img {
+    display: block;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.paiement {
+    margin-top: 20px;
+}
+
+.paiement strong {
+    font-size: 2rem;
+}
+
+
+/* bouton */
+input {
+    padding-bottom: 20px;
+}
+
+.styled {
+    border: 0;
+    line-height: 4;
+    padding: 0 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 50px;
+    background-color: #4889A5;
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 60%),
+      inset -2px -2px 3px rgb(0 0 0 / 60%);
+  }
+  
+  .styled:hover {
+    cursor: pointer;
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 60%),
+      inset 2px 2px 3px rgb(0 0 0 / 60%);
+  }
 
 /* Menu nav */
 
@@ -255,8 +234,10 @@ header {
 /* Pied de page */
 
 footer {
+    width: 100%;
+    background: #1d2232;
     text-align: center;
-    background-color: #1d2232;
+    background: #1d2232;
     padding-top: 20px;
 }
 
@@ -267,17 +248,13 @@ footer a {
 
 .inpi {
     width: 300px;
-    margin: 0 50px;
+    margin: 0 60px;
 }
 
 .artisan {
     width: 180px;
     margin: 0 50px;
     background-color: #FFF;
-}
-
-.mentions-legales {
-    margin: 20px 0;
 }
 
 .mentions-legales p {
