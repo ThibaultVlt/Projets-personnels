@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Labbej27 - Services proposés</title> <!-- Titre affiché sur la page du navigateur-->
+        <title>Labbej27 - Impression 3D</title> <!-- Titre affiché sur la page du navigateur-->
         <meta type= "description" content="Site Labbej27">
         <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/pages.css" type="text/css">
+        <link rel="stylesheet" href="css/contact.css" type="text/css">
     </head>
 
     <body>
@@ -50,57 +50,41 @@
             </div>
         </header>
 
-        <div class="container">
-            <div class="center">
-                <h1>Services proposés</h1>
-
-                <p>La société LABBEJ27 intervient dans le Secteur à Domicile pour différentes prestations de dépannage informatique :</p>
-
-                    <ul>
-                        <li>Panne matérielle (défaut d’allumage, démarrage)</li>
-                        <li>Panne ou installation logicielle (anti-virus, problème de mises à jour, accès mails, drivers, suite office…)</li>
-                        <li>Installation imprimante et autres périphériques (également en sans fil)</li>
-                        <li>Installation et dépannage internet (wifi, extension de réseau via répétiteur et ou CPL)</li>
-                        <li>Réinstallation et optimisation de votre outil informatique (SSD, Ram…)</li>
-                        <li>Nettoyage interne (dépoussiérage de l’unité centrale, ou ordinateur portable)</li>
-                        <li>Recherche et suppression de virus (mises à jour et/ou installation d’un logiciel anti-virus, mises à jour système ; sauvegarde des données voir     réinstallation système avec sécurisation)</li>
-                        <li>Conseils en sécurité informatique (sauvegardes, anti-virus, mise à jour ou migration système)</li>
-                        <li>Conseil et assistance en cas de cyberattaque ayant causé des dommages avec aide au dépôt de plainte (perte de données, fraude, usurpation ou autre situation    en ligne)</li>
-                    </ul>
-
-
-                <p> LABBEJ27 intervient également pour des prestations de petits dépannages dans ces domaines :</p>
-
-                <ul>
-                    <li>Dépannage électricité (panne générale, ou localisée sur une prise)</li>
-                    <li>Dépannage électroménager (selon type de panne, pas de grosse intervention suite problèmes de santé)</li>
-                </ul>
-
-                <p>LABBEJ27 lance également un service d’impression et modélisation 3D :</p>
-
-                <ul>
-                    <li>Pièces mécaniques avec dessin côté ou avec la pièce à reproduire (devis possible)</li>
-                    <li>Figurines 3D (œuvres libres de droit ou non protégées)</li>
-                </ul>
-
-                <div class="zone">
-                    <p>Secteur d’intervention :<br/></p>
-
-                    <img src="img/zonne-action-labbej27.PNG" alt="Zone d'activité 10 kilomètre autour d'Anet">
+        <div class="contactez-nous">
+            <h1>Contactez-nous</h1>
+            <p>Une demande, un problème, une question ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+            <form action="/page-traitement-donnees" method="post">
+                <div class="flex">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Dupont" required>
                 </div>
-            </div>
-
-            <div class="paiement">
-                <p>Conditions de paiement :<br/><br/>
-
-                    Devis avant prestation. Paiement à réception de facture en fin de prestation. TVA non applicable, article 293B du CGI.<br/><br/>
-
-                    Carte bancaire et espèces, <strong> les chèques ne sont pas acceptés</strong>.</p>
-            </div>
+                <div>
+                    <label for="email">Votre e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+                </div>
+                <div>
+                    <label for="sujet">Quel est le sujet de votre message ?</label>
+                    <select name="sujet" id="sujet" required>
+                        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                        <option value="probleme-compte">Dépannage</option>
+                        <option value="probleme-compte">Assistance</option>
+                        <option value="suivi-commande">Impression 3D</option>
+                        <option value="autre">Autre...</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Envoyer mon message</button>
+                </div>
+            </form>
         </div>
+    
         <!-- Pied de page -->
         <footer>
-            <div class="lien-societe">
+            <div>
                 <a href="https://data.inpi.fr/entreprises/538512278?q=538512278"><img class="inpi" src="img/Logo_inpi_RVB.png" alt="INPI"></a>
                 <img class="artisan" src="img/logo-artisan.png" alt="Artisan">
             </div>
@@ -109,6 +93,5 @@
                 <a  href="mentions-légales.html">Mentions légales</a>
             </div>            
         </footer>
-
     </body>
 </html>

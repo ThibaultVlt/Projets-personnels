@@ -28,7 +28,7 @@ body {
 
 .slider-content {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -68,6 +68,9 @@ strong {
     max-width: 1280px;
     margin-inline: auto;
 }
+.à-propos {
+    margin-bottom: 50px;
+} 
 
 .flex {
     display: flex;
@@ -277,7 +280,7 @@ footer a {
 }
 
 .mentions-legales {
-    margin: 20px 0;
+    padding-bottom: 20px;
 }
 
 .mentions-legales p {
