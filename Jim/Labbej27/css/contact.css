@@ -6,16 +6,14 @@
     font-size: 10px;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     background-color: #2a3148;
     font-family: "Figtree", sans-serif;
     display: flex;
     justify-content: center;
     color: #303030;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .box {
@@ -34,10 +32,8 @@ body {
 /* Formulaire */
 
 .contactez-nous {
-    position: absolute;
-    top: 165px;
-    left: 35%;
-    width: 700px;
+    margin: 700px 22% 0 22%;
+    width: 50%;
     border: 1px solid;
     border-radius: 8px;
     padding: 0 50px 0 50px;
@@ -236,12 +232,11 @@ header {
 /* Pied de page */
 
 footer {
-    position: relative;
     width: 100%;
     text-align: center;
     background-color: #1d2232;
     padding-top: 20px;
-    margin-top: auto;
+
 }
 
 footer a {
